@@ -1,0 +1,24 @@
+[package]
+name = "ttt"
+version = "0.1.0"
+edition = "2021"
+description = "Tic-tac-toe vs a perfect computer opponent"
+license = "MIT"
+repository = "https://github.com/saorsa-labs/ttt"
+homepage = "https://github.com/saorsa-labs/ttt"
+
+[[bin]]
+name = "ttt"
+path = "src/main.rs"
+
+[dependencies]
+gpui = { git = "https://github.com/zed-industries/zed", package = "gpui" }
+
+[target.'cfg(target_os = "linux")'.dependencies]
+gpui_platform = { git = "https://github.com/zed-industries/zed", package = "gpui_platform", features = ["wayland", "x11"] }
+
+[target.'cfg(target_os = "macos")'.dependencies]
+gpui_platform = { git = "https://github.com/zed-industries/zed", package = "gpui_platform", features = ["font-kit"] }
+
+[target.'cfg(target_os = "windows")'.dependencies]
+gpui_platform = { git = "https://github.com/zed-industries/zed", package = "gpui_platform" }
