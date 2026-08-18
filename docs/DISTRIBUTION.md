@@ -25,7 +25,7 @@ Nobody can skip those five for a store listing. After they exist, CI can ship ev
 | Linux | Official | GitHub Release binary |
 | Windows | Official | GitHub Release `.exe` |
 | macOS | Official | GitHub Release binary. Optional later: notarized `.app` / Homebrew |
-| Web / WASM | Not on the GPUI roadmap | Would need a different UI |
+| Web / WASM | Official but basic (Feb 2026). WebGPU only | Optional later. Not v1 |
 | iOS | Not official. Community `gpui-mobile` exists | Needs Apple account + Xcode/macOS CI runner + TestFlight |
 | Android | Not official. Community `gpui-mobile` exists | Needs Play account + NDK CI |
 
